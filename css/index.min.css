@@ -1,0 +1,56 @@
+.bp-nav {
+  width: 160px;
+  font-size: 14px;
+  color: #6ca4cd;
+  background: #1a4372;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  top: 55px;
+  bottom: 0;
+  z-index: 9;
+  transition: width 0.3s cubic-bezier(0.1, 0.57, 0.1, 1);
+  transform: translate(0) translateZ(0);
+}
+.bp-nav .bp-nav-con {
+  position: relative;
+  top: 10px;
+}
+.bp-nav .bp-nav-con .bp-nav-up {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+}
+.bp-nav .bp-nav-con .bp-nav-up li {
+  height: 40px;
+  padding: 15px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bp-nav .bp-nav-con .bp-nav-up li a {
+  color: #89badd;
+  display: flex;
+  align-items: center;
+}
+.bp-nav .bp-nav-con .bp-nav-up li a span {
+  padding-left: 10px;
+}
+.bp-nav .bp-nav-con .bp-nav-up .bp-nav ul li.active a,
+.bp-nav .bp-nav-con .bp-nav-up .bp-nav ul li:hover a {
+  color: #fff;
+}
+.bp-nav ul li.active,
+.bp-nav ul li:hover {
+  background: rgba(108, 164, 205, 0.15);
+}
+.bp-nav ul li.active:before {
+  content: " ";
+  width: 5px;
+  height: 100%;
+  background: #1eb9ee;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

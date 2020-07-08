@@ -1,0 +1,7 @@
+# jtopo-0.4.8-min.js文件不检查
+/src/assets/libs
+/src/mock
+/tests
+dist
+docs
+public
